@@ -1,11 +1,10 @@
-require local_security_policy
-  
+
 local_security_policy { 'Allow log on locally':
- ensure => 'present',
- policy_value => 'Administrators, Users',
+  ensure => 'present',
+  policy_value => 'Administrators, Users',
 }
 
 local_security_policy { 'Maximum password age':
- ensure => 'present',
- policy_value => '90',
+  ensure => 'present',
+  policy_value => '90',
 }
